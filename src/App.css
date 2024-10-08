@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* App.css */
+
+/* Phong cách tổng thể cho item trong giỏ hàng */
+.cart-item {
+  display: flex;
+  align-items: center; /* Căn giữa dọc */
+  border: 1px solid #ddd; /* Đường viền */
+  border-radius: 8px; /* Bo tròn góc */
+  padding: 16px; /* Khoảng cách bên trong */
+  margin-bottom: 16px; /* Khoảng cách giữa các item */
+  background-color: #fff; /* Màu nền trắng */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Phong cách cho phần hình ảnh sản phẩm */
+.cart-item__product {
+  flex-shrink: 0; /* Không cho phần hình ảnh co lại */
+  margin-right: 16px; /* Khoảng cách bên phải giữa hình ảnh và thông tin sản phẩm */
+}
+
+/* Hình ảnh sản phẩm */
+.product-image img {
+  width: 100px; /* Chiều rộng cố định cho hình ảnh */
+  height: auto; /* Chiều cao tự động */
+  border-radius: 5px; /* Bo tròn góc cho hình ảnh */
+}
+
+/* Phong cách cho thông tin sản phẩm */
+.product-info {
+  flex-grow: 1; /* Chiếm không gian còn lại */
+}
+
+/* Tên sản phẩm */
+.product-title {
+  font-size: 18px; /* Kích thước chữ lớn */
+  font-weight: bold; /* Chữ đậm */
+  margin-bottom: 8px; /* Khoảng cách dưới tên */
+}
+
+/* Giá sản phẩm */
+.product-price {
+  font-size: 16px; /* Kích thước chữ */
+  color: #333; /* Màu chữ tối */
+  margin-bottom: 8px; /* Khoảng cách dưới giá */
+}
+
+/* Nút "Remove" */
+.cart-item__remove {
+  background-color: #e74c3c; /* Màu nền đỏ */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Không có đường viền */
+  padding: 8px 12px; /* Khoảng cách bên trong */
+  border-radius: 5px; /* Bo tròn góc */
+  cursor: pointer; /* Hiển thị con trỏ tay khi di chuột */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+/* Hiệu ứng khi di chuột vào nút "Remove" */
+.cart-item__remove:hover {
+  background-color: #c0392b; /* Màu đỏ đậm hơn khi hover */
+}
+
+/* Phong cách cho phần số lượng sản phẩm */
+.cart-item__quantity {
+  display: flex; /* Sử dụng flexbox */
+  align-items: center; /* Căn giữa dọc */
+  margin-left: 16px; /* Khoảng cách bên trái */
+}
+
+/* Nút giảm số lượng */
+.decrease,
+.increase {
+  cursor: pointer; /* Hiển thị con trỏ tay khi di chuột */
+  padding: 8px; /* Khoảng cách bên trong */
+  color: #3498db; /* Màu chữ xanh */
+  font-size: 20px; /* Kích thước chữ lớn */
+}
+
+/* Số lượng sản phẩm */
+.quantity {
+  margin: 0 8px; /* Khoảng cách trái phải */
+  font-size: 16px; /* Kích thước chữ */
+}

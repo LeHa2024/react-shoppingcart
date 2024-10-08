@@ -1,0 +1,21 @@
+.cart-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+}
+
+.cart-title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
